@@ -29,7 +29,7 @@ const Products = () => {
       {/* tabs  */}
 
 
-      <div className='flex gap-3 justify-center mt-10 '>
+      <div className='flex flex-wrap gap-3 justify-center mt-10 '>
         {categories.map(category=>{
           return(
             <button key={category} 
@@ -43,7 +43,7 @@ const Products = () => {
       </div>
 
          {/* Product Listing  */}
-         <div className='grid grid-cols-4 gap-9'>
+         <div className='grid grid-col-1 md:grid-cols-4 gap-9'>
           {renderCards}
          </div>
         <div className='mt-15 mx-auto flex justify-center'>
