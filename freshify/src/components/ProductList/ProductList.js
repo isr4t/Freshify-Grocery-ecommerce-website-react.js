@@ -246,7 +246,15 @@ const products = [
         category: 'Vegetables' ,
         image: Eggplant
     },
+    
 
+        {
+        id:  30 ,
+        name:  'Chicken' ,
+        price:  ' 5.00$ ' ,
+        category: 'Meat & SeaFood' ,
+        image: Chicken
+    },
 
 
 
