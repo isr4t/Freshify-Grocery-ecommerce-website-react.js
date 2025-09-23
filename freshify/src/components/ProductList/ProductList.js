@@ -18,6 +18,15 @@ import IceCream from '../../assets/ice cream.png'
 import Honey from '../../assets/honey.png'
 import  Ghee from '../../assets/ghee.png'
 import Chocolate from '../../assets/chocolate.png'
+import Carrot from '../../assets/carrot.png'
+import Eggplant from '../../assets/eggplant.png'
+import Tomato from '../../assets/tomato.png'
+import Capsicum from '../../assets/capsicum.png'
+import Mutton from '../../assets/mutton.png'
+import ChickenLeg from '../../assets/chicken-1.png'
+import Chicken from '../../assets/chicken-2.png'
+import Potato from '../../assets/potato.png';
+
 
 const products = [
     {
@@ -28,43 +37,75 @@ const products = [
         image: Apple
     },
 
+        {
+        id:  2,
+        name:  'Chicken' ,
+        price:  '3.00$'  ,
+        category:  'Meat & SeeFood'  ,
+        image: Chicken
+    },
+
     {
-        id:  2  ,
+        id:  3  ,
         name:  'Banana' ,
         price:  '4.00$'  ,
         category:  'Fruits' ,
         image: Banana
     },
+         {
+        id: 4  ,
+        name:  'Mutton' ,
+        price:  '5.00$'  ,
+        category:  'Meat & SeaFood'  ,
+        image: Mutton
+    },
     {
-        id:  3  ,
+        id:  5 ,
         name:  'Mango',
         price:  '5.00$'  ,
         category: 'Fruits'   ,
         image: Mango
     },
+
+      {
+        id:   6,
+        name:  'TunaFish' ,
+        price:  '2.00$'  ,
+        category:  'Meat & SeaFood'  ,
+        image: TunaFish
+    },
+
+        {
+        id:    7,
+        name:  'Butter' ,
+        price:  '3.00$'  ,
+        category:  'Dairy'  ,
+        image:Butter
+    },
     {
-        id:   4 ,
+        id:   8 ,
         name: 'Orange'  ,
         price:   '3.00$' ,
         category:   'Fruits' ,
         image: Orange
     },
     {
-        id:  5  ,
+        id:  9,
         name:  'Pomegranate' ,
         price:   '5.00$' ,
         category:  'Fruits' ,
         image: Pomegranate
     },
+
     {
-        id:  6  ,
+        id:  10 ,
         name:  'Strawberry' ,
         price:  '4.00$' ,
         category: 'Fruits'   ,
         image: Strawberry
     },
     {
-        id:  7  ,
+        id:  11  ,
         name:  'Broccoli' ,
         price:   "1.00$" ,
         category:  'Vegetables'  ,
@@ -72,96 +113,144 @@ const products = [
     },
    
     {
-        id:   8 ,
+        id:   12,
         name:  'Cabbage' ,
         price:  '1.00$'  ,
         category: 'Vegetables'   ,
         image:Cabbage
     },
-    {
-        id:  9  ,
-        name:  'TunaFish' ,
+
+  
+    
+      {
+        id:  13 ,
+        name:  'Chicken Drumstick' ,
         price:  '2.00$'  ,
-        category:  'SeaFood'  ,
+        category:  'Meat & SeaFood'  ,
+        image: ChickenLeg
+    },
+
+     {
+        id:  14  ,
+        name:  'Rui Fish' ,
+        price:  '2.00$'  ,
+        category:  'Meat & SeaFood'  ,
         image: TunaFish
     },
     {
-        id:   10 ,
+        id:   15 ,
         name:  'Fish' ,
         price:   '4.00$' ,
-        category:  'SeaFood'  ,
+        category:  'Meat & SeaFood'  ,
         image: Fish
     },
     {
-        id:   11 ,
+        id:   16 ,
         name: 'RuiFish'  ,
         price:   '4.00$' ,
-        category:   'SeaFood' ,
+        category:   'Meat & SeaFood' ,
         image: RuiFish
     },
       {
-        id:  12   ,
+        id:  17   ,
         name:   'Shirmp' ,
         price:  '4.00$'   ,
-        category:   'SeaFood' ,
+        category:   'Meat & SeaFood' ,
         image:Shirmp
     },
     {
-        id:   13 ,
+        id:   18 ,
         name:  'Milk' ,
         price:   '1.5$' ,
         category:  'Dairy'  ,
         image: Milk
     },
     {
-        id:    14,
+        id:    19,
         name:  'Cheese' ,
         price:  '2.00$'  ,
         category:  'Dairy'  ,
         image: Cheese
     },
+
     {
-        id:    15,
-        name:  'Butter' ,
-        price:  '3.00$'  ,
-        category:  'Dairy'  ,
-        image:Butter
-    },
-    {
-        id:   16 ,
+        id:   20 ,
         name:  'Yogurt' ,
         price:   '2.00$' ,
         category:  'Dairy'  ,
         image: Yogurt
     },
     {
-        id:   17 ,
+        id:   21 ,
         name:  'IceCream' ,
         price: '2.00$'   ,
         category:  'Dairy'  ,
         image: IceCream
     },
     {
-        id:  17  ,
+        id:  22  ,
         name:  'Honey' ,
         price:  '2.00$'  ,
         category:  'Dairy'  ,
         image:Honey
     },
     {
-        id:    18,
+        id:    23,
         name: 'Ghee'  ,
         price:   '5.00$' ,
         category:  'Dairy'  ,
         image: Ghee
     },
     {
-        id:  19 ,
+        id:  24 ,
         name:  'Chocolate' ,
         price:  ' 1.00$ ' ,
         category: 'Dairy'   ,
         image: Chocolate
-    }
+    },
+
+       {
+        id:  25 ,
+        name:  'Tomato' ,
+        price:  ' 1.00$ ' ,
+        category: 'Vegetables'   ,
+        image: Tomato
+    },
+
+       {
+        id:  26 ,
+        name:  'Capsicum' ,
+        price:  ' 2.00$ ' ,
+        category: 'Vegetables'   ,
+        image: Capsicum
+    },
+        {
+        id:  27,
+        name:  'Carrot' ,
+        price:  ' 2.00$ ' ,
+        category: 'Vegetables'   ,
+        image: Carrot
+    },
+        {
+        id:  28 ,
+        name:  'Potato' ,
+        price:  ' 2.00$ ' ,
+        category: 'Vegetables'   ,
+        image: Potato 
+    },
+
+        {
+        id:  29 ,
+        name:  'Eggplant' ,
+        price:  ' 2.00$ ' ,
+        category: 'Vegetables' ,
+        image: Eggplant
+    },
+
+
+
+
+
    
    
 ];

@@ -7,7 +7,7 @@ import Button from '../Button/Button'
 const Products = () => {
 
 
- const categories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'SeaFood']
+ const categories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'Meat & SeaFood']
  const [activeTab, setActiveTab] = useState('All');
  let filteredItems = activeTab=== 'All' ? ProductList: ProductList.filter(item=>item.category===activeTab);
 
