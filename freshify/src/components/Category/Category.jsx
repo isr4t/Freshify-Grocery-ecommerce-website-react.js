@@ -3,7 +3,7 @@ import Heading from '../Heading/Heading'
 import FruitsCat from '../../assets/fruits & veggies.png'
 import DairyCat from '../../assets/milk & dairy.png'
 import MeatCat from '../../assets/meat.png'
-import Button from '../Button/Button'
+import{Link  } from 'react-router-dom'
 
 const Category = () => {
 
@@ -25,7 +25,9 @@ const Category = () => {
         <div className='bg-zinc-100 pt-20 p-8 rounded-xl'>
           <h3 className='text-zinc-800 text-3xl font-bold'>{card.title}</h3>
           <p className='text-zinc-600 mt-3 mb-9'>{card.description}</p>
-          <Button content="See All"/>
+        <Link to={card.path} className='bg-gradient-to-b from-orange-400 to-orange-500 text-white
+      px-8 py-3 rounded-lg text-lg hover:scale-105 hover:to-orange-600 transition-all 
+      duration-300 cursor-pointer'>See All</Link>
         </div>
       </div>
     )
@@ -56,18 +58,21 @@ const categories = [
     title: 'Fruits & Veggies',
     description: 'From leafy greens to root veggies, find the freshest produce straight from the farm.',
     image: FruitsCat,
+    path:'/fruits'
   },
   {
     id: 2,
     title: 'Dairy Products',
     description: 'Pure and fresh milk, cheese, butter, and other dairy essentials for your daily nutrition.',
     image: DairyCat,
+    path:'/dairy'
   },
   {
     id: 3,
     title: 'Meat & Sea food',
     description: 'Fresh meat and seafood, carefully sourced to bring quality and taste to your meals.',
     image: MeatCat,
+    path:'/seafood'
   },
 ]
 
